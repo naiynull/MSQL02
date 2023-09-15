@@ -23,7 +23,8 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async () => {
   return { hello: 'world' }
 })
-
+Route.post("/register", "AuthController.register")
+Route.post("/login", "AuthController.login")
 /* a tarefada da rota e receber a requisição e devolver o codigo  */
 
 /* controler-> são classes que centaliza o procesamento pela rota que ultiliza o processamento do codigo solicitado   */
