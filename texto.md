@@ -14,7 +14,8 @@ http://127.0.0.1:3333
  -
 
 
---------------COMANDOS-------------------------------
+--------------COMANDOS--------------------------------
+.............Comandos de criação....................
 sudo systemctl start mysql
 node -v
 npm init adonis-ts-app@latest hello-world
@@ -22,6 +23,8 @@ npm i @adonisjs/lucid
 node ace configure @adonisjs/lucid
 npm i @adonisjs/auth
 node ace configure @adonisjs/auth
+---------------------------------------------------
+...............Comandos em geral..................
 node ace-> ele vai ler o seu codigo e criar as tabelas 
 migration:run-> migra uma tabela para o banco de dados 
 validator register-> validar
@@ -134,12 +137,22 @@ arm -> gerenciador de pacote (npm)
 ----------------------------------------------------------------------------------------
 
 
-ROTEIRO 
+
+
+
+
+
+------------------------------ROTEIRO --------------------------------------------------
 abrir o php myadmin
+abrir o terminal e dar sudo   systemctl start mysql
 acessar o seu bancoi de dados (não executar)
+----------------------------------------------------------------------------------------
+caso a tabela seja nova 
+node ace migration:run
+---------------------------------------------------------------------------------------
 criar o arquivo .env 
 copiar o que esta no arquivo .env.example 
 configuarar os dados no .env(mudar o user, senha, nome do banco de dados )
-sudo systemctl start mysql
+
 
 
